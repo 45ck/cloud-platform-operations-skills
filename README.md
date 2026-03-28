@@ -89,9 +89,9 @@ LICENSE                              MIT
 
 ## Related workflow agents
 
-- [software-architect](https://github.com/45ck/workflow-agents) - Own platform and cloud placement decisions
-- [delivery-manager](https://github.com/45ck/workflow-agents) - Coordinate rollout and operations work
-- [security-reviewer](https://github.com/45ck/workflow-agents) - Review operational exposure and access-control implications
+- [software-architect](https://github.com/45ck/skill-harness) - Own platform and cloud placement decisions
+- [delivery-manager](https://github.com/45ck/skill-harness) - Coordinate rollout and operations work
+- [security-reviewer](https://github.com/45ck/skill-harness) - Review operational exposure and access-control implications
 
 ## Related skill packs
 
