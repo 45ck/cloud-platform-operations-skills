@@ -1,0 +1,132 @@
+{
+  "name": "cloud-platform-operations-pack",
+  "version": "0.1.0",
+  "type": "skill-pack",
+  "summary": "Cloud model selection, platform operations, patching, maintenance timing, ACL review, lifecycle, and migration pack for Claude Code-style workflows.",
+  "recommended_order": [
+    "iaas-paas-saas-faas-selector",
+    "public-private-hybrid-cloud-reviewer",
+    "resource-lifecycle-planner",
+    "patch-management-checker",
+    "blue-green-readiness-reviewer",
+    "maintenance-window-planner",
+    "orphaned-resource-auditor",
+    "acl-maintenance-reviewer",
+    "update-rollback-planner",
+    "migration-wave-planner"
+  ],
+  "skills": [
+    {
+      "id": "iaas-paas-saas-faas-selector",
+      "path": "skills/iaas-paas-saas-faas-selector/SKILL.md",
+      "purpose": "Select the most appropriate cloud service model by comparing control, speed, portability, ops burden, and compliance needs.",
+      "handoffs": [
+        "public-private-hybrid-cloud-reviewer",
+        "resource-lifecycle-planner",
+        "container-vs-vm-advisor"
+      ]
+    },
+    {
+      "id": "public-private-hybrid-cloud-reviewer",
+      "path": "skills/public-private-hybrid-cloud-reviewer/SKILL.md",
+      "purpose": "Review whether a workload should run in public, private, or hybrid cloud based on data sensitivity, integration needs, and operational realities.",
+      "handoffs": [
+        "resource-lifecycle-planner",
+        "maintenance-window-planner",
+        "migration-wave-planner"
+      ]
+    },
+    {
+      "id": "resource-lifecycle-planner",
+      "path": "skills/resource-lifecycle-planner/SKILL.md",
+      "purpose": "Plan how cloud resources are provisioned, tagged, scaled, rotated, retired, and audited across their full lifecycle.",
+      "handoffs": [
+        "orphaned-resource-auditor",
+        "patch-management-checker",
+        "update-rollback-planner"
+      ]
+    },
+    {
+      "id": "patch-management-checker",
+      "path": "skills/patch-management-checker/SKILL.md",
+      "purpose": "Check whether platform and cloud-hosted components can be patched safely with clear ownership, cadence, testing, and rollback coverage.",
+      "handoffs": [
+        "maintenance-window-planner",
+        "update-rollback-planner",
+        "blue-green-readiness-reviewer"
+      ]
+    },
+    {
+      "id": "blue-green-readiness-reviewer",
+      "path": "skills/blue-green-readiness-reviewer/SKILL.md",
+      "purpose": "Review whether a service is actually ready for blue/green or similar low-downtime deployment patterns.",
+      "handoffs": [
+        "update-rollback-planner",
+        "maintenance-window-planner",
+        "migration-wave-planner"
+      ]
+    },
+    {
+      "id": "maintenance-window-planner",
+      "path": "skills/maintenance-window-planner/SKILL.md",
+      "purpose": "Plan a maintenance window that balances operational safety, customer impact, rollback time, staffing, and dependency timing.",
+      "handoffs": [
+        "patch-management-checker",
+        "update-rollback-planner",
+        "migration-wave-planner"
+      ]
+    },
+    {
+      "id": "orphaned-resource-auditor",
+      "path": "skills/orphaned-resource-auditor/SKILL.md",
+      "purpose": "Audit cloud resources for stale, unowned, unused, or risky assets that should be tagged, reclaimed, or removed.",
+      "handoffs": [
+        "resource-lifecycle-planner",
+        "acl-maintenance-reviewer",
+        "patch-management-checker"
+      ]
+    },
+    {
+      "id": "acl-maintenance-reviewer",
+      "path": "skills/acl-maintenance-reviewer/SKILL.md",
+      "purpose": "Review cloud ACLs, security groups, firewall rules, and permissions for drift, unnecessary exposure, and maintenance risk.",
+      "handoffs": [
+        "orphaned-resource-auditor",
+        "patch-management-checker",
+        "resource-lifecycle-planner"
+      ]
+    },
+    {
+      "id": "update-rollback-planner",
+      "path": "skills/update-rollback-planner/SKILL.md",
+      "purpose": "Plan how platform, infrastructure, or service updates are deployed, validated, and rolled back under real operational constraints.",
+      "handoffs": [
+        "blue-green-readiness-reviewer",
+        "maintenance-window-planner",
+        "patch-management-checker"
+      ]
+    },
+    {
+      "id": "migration-wave-planner",
+      "path": "skills/migration-wave-planner/SKILL.md",
+      "purpose": "Plan migration waves that sequence systems, data, dependencies, and operational support in a low-chaos rollout order.",
+      "handoffs": [
+        "maintenance-window-planner",
+        "update-rollback-planner",
+        "public-private-hybrid-cloud-reviewer"
+      ]
+    }
+  ],
+  "templates": [
+    "templates/cloud-service-model-selection-template.md",
+    "templates/cloud-placement-review-template.md",
+    "templates/resource-lifecycle-template.md",
+    "templates/patch-readiness-template.md",
+    "templates/blue-green-readiness-template.md",
+    "templates/maintenance-window-template.md",
+    "templates/orphaned-resource-audit-template.md",
+    "templates/acl-maintenance-review-template.md",
+    "templates/update-rollback-plan-template.md",
+    "templates/migration-wave-plan-template.md"
+  ]
+}
