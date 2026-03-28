@@ -87,6 +87,12 @@ uninstall.sh                         global uninstaller
 LICENSE                              MIT
 ```
 
+## Related workflow agents
+
+- [software-architect](https://github.com/45ck/workflow-agents) - Own platform and cloud placement decisions
+- [delivery-manager](https://github.com/45ck/workflow-agents) - Coordinate rollout and operations work
+- [security-reviewer](https://github.com/45ck/workflow-agents) - Review operational exposure and access-control implications
+
 ## Related skill packs
 
 - [business-analysis-skills](https://github.com/45ck/business-analysis-skills) - Business analysis techniques, workflows, and quality checks
